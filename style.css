@@ -17,16 +17,17 @@ body {
   background-image: url('assets/deadpool.jpg'); /* Adiciona a imagem do diretório local */
   background-size: cover;
   background-position: center;
+  text-align: center; /* Ajusta o texto ao centro */
 }
 
 main {
   background-color: rgba(189, 0, 0, 0.8);
-  padding: 40px;
+  padding: 20px;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   text-align: center;
   max-width: 500px;
-  margin-top: 20px;
+  margin: 20px;
   font-family: 'Georgia', serif;
 }
 
@@ -63,4 +64,30 @@ button:hover {
   margin-top: 20px;
   font-size: 1.2em;
   color: #000000;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+    max-width: 90%;
+    margin: 10px;
+  }
+
+  #convite p {
+    font-size: 1.2em;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  #resposta {
+    font-size: 1em;
+  }
+
+  #contador {
+    font-size: 1em;
+  }
 }
